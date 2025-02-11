@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Arial", Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.toggle {
+    height: 15px;
+    width: 25px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+}
+.toggle span {
+    height: 3px;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    transition: 0.3s ease;
+}
+.toggle span:nth-child(2) {
+    top: 6px;
+}
+.toggle span:last-child {
+    top: 12px;
+}
+.separator {
+    margin-bottom: 50px;
+}
+nav {
+    background-color: #333;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: 0.3s;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 20px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background-color: #444;
+}
+nav .close {
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+main {
+    padding: 20px;
+}
+section:not(:last-child) {
+    margin-bottom: 1000px;
+}
